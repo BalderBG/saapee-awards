@@ -1,0 +1,66 @@
+.sound {
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  z-index: 2;
+  border: 1px solid #655c3d;
+  background: #17140b99;
+  color: #f9df72;
+  border-radius: 5px;
+  padding: 8px 11px;
+  font: 11px Outfit;
+  cursor: pointer;
+}
+.replay,
+.replay-side,
+.watch-intro {
+  font: 600 11px Outfit;
+  cursor: pointer;
+}
+.replay {
+  margin-left: auto;
+  border: 1px solid #584d64;
+  background: #292431;
+  color: #d8cce1;
+  border-radius: 5px;
+  padding: 6px 9px;
+}
+.replay-side {
+  border: 1px solid #4f455b;
+  background: #2a2531;
+  color: #cdbddd;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 9px;
+}
+.home-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.watch-intro {
+  border: 1px solid #645672;
+  background: transparent;
+  color: #ded1e9;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-top: 5px;
+}
+@media (max-width: 800px) {
+  .sound {
+    left: 15px;
+    top: 15px;
+  }
+  .replay {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .sound {
+    font-size: 10px;
+    padding: 7px;
+  }
+  .home-actions {
+    flex-wrap: wrap;
+  }
+}

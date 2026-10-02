@@ -1,0 +1,83 @@
+.nominees-section {
+  margin-top: 38px;
+  padding-top: 30px;
+  border-top: 1px solid #403848;
+}
+.nominees-head > span {
+  font: 10px "DM Mono";
+  letter-spacing: 1px;
+  color: #a7ee79;
+}
+.nominees-head h2 {
+  font-size: 28px;
+  margin: 6px 0 18px;
+}
+.nominee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.nominee-card {
+  overflow: hidden;
+  border: 1px solid #473c56;
+  border-radius: 10px;
+  background: #231f2c;
+}
+.nominee-card img,
+.nominee-avatar {
+  display: block;
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  background: linear-gradient(135deg, #8e65d8, #294a40);
+  color: #e9d8ff;
+}
+.nominee-avatar {
+  display: grid;
+  place-items: center;
+  font-size: 38px;
+}
+.nominee-card > div:last-child {
+  padding: 13px;
+}
+.nominee-card h3 {
+  font-size: 16px;
+  margin: 0;
+}
+.nominee-card p {
+  min-height: 34px;
+  margin: 5px 0;
+  color: #aaa3b1;
+  font-size: 12px;
+  line-height: 1.35;
+}
+.nominee-card small {
+  font: 10px "DM Mono";
+  color: #b6ef94;
+}
+.nominee-card button {
+  float: right;
+  border: 1px solid #86b46b;
+  border-radius: 5px;
+  background: #273526;
+  color: #bdf19e;
+  font: 600 11px Outfit;
+  padding: 5px 9px;
+  cursor: pointer;
+}
+.nominee-card button:disabled {
+  cursor: default;
+  border-color: #5a5363;
+  background: #302b37;
+  color: #aea6b6;
+}
+@media (max-width: 800px) {
+  .nominee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .nominee-grid {
+    grid-template-columns: 1fr;
+  }
+}

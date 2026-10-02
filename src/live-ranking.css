@@ -1,0 +1,64 @@
+.live-podium {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 0 auto 26px;
+  max-width: 720px;
+}
+.live-podium-place {
+  min-height: 165px;
+  border: 1px solid #4b4059;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #2d2736, #221f29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.25s;
+}
+.live-podium-place:first-child {
+  border-color: #a88836;
+  background: linear-gradient(145deg, #41351e, #272116);
+}
+.live-podium-place span {
+  font-size: 28px;
+}
+.live-podium-place img,
+.live-podium-place i {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 7px;
+  background: #604b78;
+  display: grid;
+  place-items: center;
+  font-style: normal;
+}
+.live-podium-place b {
+  font-size: 12px;
+}
+.live-podium-place small {
+  font: 10px "DM Mono";
+  color: #b5efa0;
+  margin-top: 4px;
+}
+@media (max-width: 480px) {
+  .live-podium {
+    gap: 7px;
+  }
+  .live-podium-place {
+    min-height: 138px;
+    padding: 8px;
+  }
+  .live-podium-place img,
+  .live-podium-place i {
+    width: 42px;
+    height: 42px;
+  }
+  .live-podium-place b {
+    font-size: 10px;
+  }
+}

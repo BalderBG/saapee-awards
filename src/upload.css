@@ -1,0 +1,182 @@
+.upload-button,
+.outline,
+.submit {
+  font: 700 13px Outfit;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.upload-button {
+  background: #9fe870;
+  color: #1c321d;
+  border: 0;
+  padding: 11px 15px;
+  margin-top: 5px;
+}
+.outline {
+  background: transparent;
+  border: 1px solid #61566d;
+  color: #d5cce0;
+  padding: 8px 11px;
+}
+.empty {
+  grid-column: 1/-1;
+  border: 1px dashed #524b5b;
+  border-radius: 9px;
+  min-height: 205px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: #201d28;
+  color: #b5aebe;
+}
+.empty b {
+  font-size: 28px;
+  color: #b58cff;
+}
+.empty h3 {
+  font-size: 15px;
+  color: #f0ecf4;
+  margin: 8px 0 3px;
+}
+.empty p {
+  font-size: 12px;
+  margin: 0;
+}
+.modal-wrap {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  background: #09070dbb;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+}
+.upload-modal {
+  width: min(470px, 100%);
+  background: #282330;
+  border: 1px solid #5b5069;
+  border-radius: 12px;
+  padding: 28px;
+  position: relative;
+  box-shadow: 0 24px 80px #000a;
+}
+.close {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  border: 0;
+  background: transparent;
+  color: #d6cddb;
+  font-size: 27px;
+  cursor: pointer;
+}
+.label {
+  font: 10px "DM Mono";
+  letter-spacing: 1px;
+  color: #a7ee79;
+}
+.upload-modal h2 {
+  margin: 7px 0;
+  font-size: 26px;
+}
+.upload-modal > p {
+  font-size: 13px;
+  color: #aaa3b1;
+  line-height: 1.4;
+  margin: 0 0 19px;
+}
+.drop {
+  height: 135px;
+  border: 1px dashed #8468a3;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: #d7c8e6;
+  text-align: center;
+}
+.drop input {
+  display: none;
+}
+.drop b {
+  font-size: 23px;
+  color: #a7ee79;
+}
+.drop strong {
+  font-size: 13px;
+  margin: 5px;
+}
+.drop small {
+  font-size: 10px;
+  color: #a49cab;
+}
+.drop.chosen {
+  border-color: #9fe870;
+  background: #263326;
+}
+.field {
+  display: block;
+  font-size: 12px;
+  color: #cbc3d2;
+  margin: 16px 0 10px;
+}
+.field input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  background: #1c1923;
+  border: 1px solid #554d5d;
+  border-radius: 5px;
+  color: #f7f3f8;
+  font: 13px Outfit;
+  padding: 10px;
+}
+.upload-error {
+  color: #ffadbc !important;
+  background: #482832;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 11px !important;
+  margin: 8px 0 !important;
+}
+.submit {
+  width: 100%;
+  border: 0;
+  background: #9fe870;
+  color: #1d301d;
+  padding: 11px;
+}
+.submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.clip-cover.uploaded {
+  background-position: center;
+  background-size: cover;
+}
+.youtube-frame {
+  padding: 0;
+  background: #100e15;
+}
+.youtube-frame:after {
+  display: none;
+}
+.youtube-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.quality {
+  z-index: 1;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #192417d9;
+  color: #c4f5a0;
+  border-radius: 3px;
+  padding: 3px 5px;
+  font: 9px "DM Mono";
+}

@@ -1,0 +1,26 @@
+# Dependencies and generated front-end build
+node_modules/
+dist/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Local application data: accounts, password hashes, sessions-derived data and votes
+data/*.json
+!data/.gitkeep
+
+# User-uploaded media
+uploads/profiles/*
+!uploads/profiles/.gitkeep
+uploads/clips/*
+!uploads/clips/.gitkeep
+
+# Logs, coverage and editor/OS files
+*.log
+coverage/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

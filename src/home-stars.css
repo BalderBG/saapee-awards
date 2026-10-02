@@ -1,0 +1,6 @@
+@keyframes homeStars {
+  50% {
+    opacity: 0.76;
+    transform: translateY(-12px);
+  }
+}
